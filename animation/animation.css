@@ -1,0 +1,45 @@
+/*basic styling*/
+body{
+    background-color: #333;
+    }
+
+    /*box-animation*/
+
+.box{
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 10px;
+    position: relative; /*default is static so can not be moved. therefore we use relative position so we can move it easily*/
+    animation-name: sampleanimation;
+    animation-duration: 20s;
+    animation-iteration-count: 2;/*infinite*/
+    animation-delay: 10s;/*when start after loading*/
+    animation-direction:alternate;
+    /* animation-timing-function: ; */
+    /* animation-fill-mode: forwards; */
+}
+
+/*keyfames*/
+@keyframes sampleanimation{
+0%{
+    background-color: #333;
+left: 0px;
+top: 0px;
+}
+75%{
+    background-color: #333;
+left: 0px;
+top: 0px;
+}
+90%{
+    background-color:white ;
+    left: 0;
+    top: 50px;
+}
+100%{
+    background-color: #333;
+    left: 0;
+    top: 250px;
+}
+}

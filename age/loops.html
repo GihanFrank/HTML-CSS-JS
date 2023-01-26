@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        button {padding: 5px; 
+            border-color: rgb(88, 136, 222) ; 
+            background-color: rgb(88, 136, 222); 
+            border-width: 1px; border-radius: 4px; font-size: 14px; 
+            color: rgb(250, 248, 248);
+            font-family: Calibri;
+            font-size: 16px;
+            font-weight: bold;
+            padding-left: 40px;
+            padding-right: 40px;
+            align-items: center;
+            box-shadow: #dddddd 5px 5px 10px;
+
+        }
+        
+        button:hover{
+            background: rgb(63, 113, 194);
+
+        }
+    </style>
+    <title>Loops</title>
+</head>
+
+<body>
+    
+    <p id="test2"></p>
+    <button id="but" onclick="devide()" ondblclick="document.getElementById('test').style.display='block'">Devide</button>
+    <button onclick="document.getElementById('test').style.display='none'">Clear</button>
+    <p id="test" style="color: red;font-size: 20px;"></p>
+    <script>
+
+        x = 5;
+        y = 8;
+        function devide() {
+            document.getElementById('test').innerHTML = x / y;
+        }
+
+        function myfunction() {
+            let p1 = 10, p2 = 15;
+            return p1 * p2;
+
+        }
+        document.getElementById("test").innerHTML = myfunction();
+        document.getElementById("test2").innerHTML = myfunction();
+
+        var myAge;
+
+        myAge = prompt('What is your age? ');
+        myAge++
+
+    </script>
+
+    <P id="age" style="color:brown;font-size: 16px">Next year my age will be</P>
+    <button onclick="document.getElementById('age').innerHTML=myAge;"><b>S</b>how</button>
+    <p style="font-size: 16px;color:red"></p>
+</body>
+
+</html>

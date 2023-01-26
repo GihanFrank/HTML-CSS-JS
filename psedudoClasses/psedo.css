@@ -1,0 +1,95 @@
+/* .lnkis the class,, :hover, :active are the pseudo classes*/
+.lnk{
+    font-size: 35px;
+    color: red;
+}
+.lnk:hover{
+    background-color: green;
+}
+.lnk:active{
+    background-color: yellow;
+}
+.lnk:visited{
+    color: black;
+}
+
+.chl p:first-child{
+    color: cornflowerblue;
+    background-color: darkcyan;
+    font-size: 24px;
+    font-family: sans-serif;
+}
+.chl p:last-child{
+    color: darkgray;
+    background-color: bisque;
+    font-size: 25px;
+}
+.chl p:nth-child(4){
+    color: greenyellow;
+    background-color: black;
+    font-size: 25px;
+    padding: 5px 5px;
+}
+.chl p:nth-child(odd){
+    padding: 10px 10px;
+}
+input[type="text"]:focus{
+    background-color:darkseagreen;
+}
+input[type="email"]:disabled{
+    background-color:yellow;
+}
+input[type="checkbox"]:checked+p{
+    color: red;
+    background-color: greenyellow;
+}
+
+/*psedo elements needs two colons*/
+
+.req::before{/* this psedo element is before the req class*/
+    content:'';/*this content thing is very important to-- (we are trying to buil
+    an square before the Name form-dont know y. it was in the video)--
+    --*/
+    height: 30px;
+    display: block;
+    width: 15px;
+    background-color: red;
+}
+.req::after{
+    content: '***';
+    height: 15px;
+    width: 30px;
+    display: block;
+    background-color:aqua;
+}
+.frm button{/*this is the parent position-this is the reference for the next code block*/
+    position: relative;
+}
+.frm button:hover::after{ /*this is psedo class  and element*/
+    content: attr(data-tooltip);
+    background-color: navajowhite;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin-top: 5px;
+    padding: 5px;
+
+}
+.para::first-letter{
+    background-color: aquamarine;
+    font-size: 75px;
+    font-weight: 700px;
+}
+
+/*select a particular portion by user to change formattion in psudo elements*/
+::selection{
+    background-color: yellow;
+    color: brown;
+    
+}
+h1::selection{
+    background-color:green;
+    color: brown;
+    
+}

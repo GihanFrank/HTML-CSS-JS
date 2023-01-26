@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <title>BMI comparison</title>
+</head>
+
+<body>
+    ----BMi checker---
+    <script>
+        let weight1;
+        let height1;
+        let bmi;
+        let weight2;
+        let height2;
+        let bmi2;
+
+        weight1 = prompt("What is Kasun's weight ");
+        height1 = prompt("What is Kasun's height ");
+        bmi = weight1 / (height1 ** 2);
+
+
+        weight2 = prompt("What is Nimal's weight ");
+        height2 = prompt("What is Nimal's height ");
+        bmi2 = weight2 / (height2 ** 2);
+
+
+
+
+        function bodyM1() {
+            document.getElementById("sd1").innerHTML = "Kasun's BMI is " + bmi;
+        }
+
+        function bodyM2() {
+            document.getElementById("sd2").innerHTML = "Nimal's BMI is " + bmi2;
+        }
+
+        function fre() {
+            window.location.reload();
+        }
+
+    </script>
+
+    <p onclick="bodyM1()" id="sd1" style="font-size: 25px; color: rgb(250, 3, 238);">Click to see Kasun's BMI</p>
+    <p onclick="bodyM2()" id="sd2" style="font-size: 25px; color: rgb(3, 250, 85);">Click to see Nimal's BMI</p>
+    <button onclick="fre()" id="b2">refresh</button>
+</body>
+
+</html>

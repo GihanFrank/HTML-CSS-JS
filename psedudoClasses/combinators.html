@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Combinators</title>
+    <style>
+        /* you can call for any tag under the main tag */
+        div {
+            text-align: center;
+        }
+
+        div ul,
+        li {
+            padding: 5px 5px;
+            margin: 10px 10px 10px 10px;
+            text-align: center;
+            background-color: aqua;
+            display: inline;
+
+        }
+
+        /* child combinator is valid only just under the main tag (only children, not for grand chidern*/
+        div>p {
+            color: red;
+        }
+
+        h3+p {
+            /* adjesent sibiling combinator--any pragrph tag under any h3 tag*/
+            color: white;
+            background-color: black;
+            padding: 10px 10px;
+        }
+
+        /*general sibling combinator--- any p tags after the h2 tag*/
+        h2~p {
+            font-size: 24px;
+            font-style: italic;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <!--decendent combinator-->
+            <li>List item1</li>
+            <li>List item2</li>
+            <li>List Item3</li>
+            <li>List item4</li>
+        </ul>
+    </div>
+    <br>
+    <hr>
+    <hr>
+    <!-- child combinator -->
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit adipisci magni totam sequi explicabo
+            possimus hic necessitatibus, libero, sit error, est temporibus consectetur. Nesciunt cum, distinctio
+            voluptas excepturi praesentium architecto!</p>
+        <hr>
+        <h4>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur dolores, ratione temporibus cupiditate
+                itaque animi aliquam, officiis in non ipsa eaque sit voluptatibus cum totam laudantium beatae earum
+                distinctio illo.</p>
+            <hr>
+        </h4>
+    </div>
+    <div><br>
+        <hr>
+        <hr>
+        <h3>Example Elements</h3>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit dignissimos fuga consequuntur doloribus amet
+            esse quasi aut quibusdam eveniet! Deleniti asperiores mollitia deserunt quam delectus, iure dolorem? Est, ut
+            dolorem.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum ad, earum perferendis dolorum quos facilis!
+            Voluptas eveniet officiis blanditiis consectetur in vero provident ex, error laudantium necessitatibus
+            accusantium deleniti quaerat?</p>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum tenetur cupiditate quidem aut quia dolorem
+            maxime numquam qui, voluptatem eum ad autem cum aperiam, quibusdam similique voluptates sequi totam veniam.
+        </p>
+        <h3>More examples</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis vel illo ipsa atque qui iste distinctio
+            explicabo error eius, omnis architecto minima libero voluptatem quo voluptatum debitis aut velit.</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, minima! Enim voluptate rem corrupti
+            natus minus molestias, voluptatum repellat veniam asperiores modi incidunt dignissimos molestiae distinctio
+            placeat officia cumque. Doloribus!</p>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas sequi rem optio quaerat ipsum nobis obcaecati
+            itaque non suscipit fuga. Quisquam obcaecati officiis eaque vel. Repudiandae veritatis hic eveniet
+            consequuntur.</p>
+    </div>
+    <!-- /*general sibling combinator -->
+    <br>
+    <hr>
+    <hr>
+    <h3>Example Elements</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit dignissimos fuga consequuntur doloribus amet
+        esse quasi aut quibusdam eveniet! Deleniti asperiores mollitia deserunt quam delectus, iure dolorem? Est, ut
+        dolorem.</p>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum ad, earum perferendis dolorum quos facilis!
+        Voluptas eveniet officiis blanditiis consectetur in vero provident ex, error laudantium necessitatibus
+        accusantium deleniti quaerat?</p>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum tenetur cupiditate quidem aut quia dolorem
+        maxime numquam qui, voluptatem eum ad autem cum aperiam, quibusdam similique voluptates sequi totam veniam.
+    </p>
+    <h2>More examples</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem corporis vel illo ipsa atque qui iste distinctio
+        explicabo error eius, omnis architecto minima libero voluptatem quo voluptatum debitis aut velit.</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus, minima! Enim voluptate rem corrupti
+        natus minus molestias, voluptatum repellat veniam asperiores modi incidunt dignissimos molestiae distinctio
+        placeat officia cumque. Doloribus!</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas sequi rem optio quaerat ipsum nobis obcaecati
+        itaque non suscipit fuga. Quisquam obcaecati officiis eaque vel. Repudiandae veritatis hic eveniet
+        consequuntur.</p>
+</body>
+
+</html>

@@ -1,0 +1,194 @@
+/*global appearance*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/*common styles*/
+body {
+    background-image: url(back.png);
+    background-position: center;
+    background-size: auto;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+
+}
+
+button {
+    cursor: pointer;
+    border: 1px black solid;
+    padding: 6px 10px;
+    font-size: 0.9rem;
+    transition: all 0.3s ease-in;
+}
+
+button:hover {
+    background-color: #f092fc !important;
+    color: black !important;
+}
+
+input,
+textarea,
+table {
+    font-size: 1rem;
+}
+
+::placeholder {
+    font-size: 0.9rem;
+}
+
+/*header*/
+header {
+    background-color: #298f37;
+    max-width: 700px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    /*important set items side by side*/
+    align-items: center;
+    /*alinged items to the center of div*/
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+}
+
+header .logo {
+    background-color: #fff;
+    color: #298f37;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+header .search input {
+    border-radius: 10px;
+    height: 35px;
+}
+
+/*container*/
+
+.container {
+    background-color: #fff;
+    max-width: 650px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 20px;
+    border: 5px #298f37 solid;
+
+}
+
+.container .inputForm {
+    background-color: transparent;
+    width: 40%;
+    padding: 10px;
+    margin-right: 10px;
+
+}
+
+.container .inputForm form {
+    margin: auto;
+    background-color: #298f37;
+    padding: 15px;
+    text-align: center;
+
+}
+
+.container .inputForm form h4 {
+    margin-bottom: 5px;
+    color: #fff;
+    text-align: center;
+}
+
+.container .inputForm input {
+    width: 100%;
+    padding: 15px 10px;
+    margin-bottom: 2px;
+    height: 20px;
+}
+
+.container .inputForm textarea {
+    margin-bottom: 10px;
+    padding: 15px 10px;
+    width: 100%;
+    height: 150px;
+    resize: none;
+
+}
+
+.container .inputForm button {
+    width: 75%;
+    margin: 5px;
+}
+
+.container .tables {
+    background-color: #fff;
+    width: 50%;
+    max-height: 280px;
+    overflow: auto;
+    padding: 10px;
+    margin-left: 10px;
+
+}
+
+.container .tables table {
+    width: 100%;
+    background-color: #298f37;
+    padding: 10px 15px;
+    border-collapse: collapse;
+
+}
+
+.container .tables table,
+.container .tables table td {
+    border: 2px black solid;
+    padding: 5px 5px;
+}
+
+.container .tables table th {
+    padding: 5px;
+    text-align: left;
+    color: #fff;
+}
+
+.container .tables table th:last-child,
+.container .tables table th:nth-child(2) {
+    text-align: center;
+}
+
+.container .tables table .buttonCellV,
+.container .tables table .buttonCellD {
+    text-align: center;
+}
+.container .tables table td{/* test is hidden in the forms*/
+    max-width: 100px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.container .tables table .buttonCellD button{
+    background-color:#fc3232;
+    color: white;
+}
+/* responsive page .. this allows to see on any browser any device conviniently*/
+@media(max-width:600px){
+    header{
+        flex-direction: column;
+    }
+    header .logo{
+        margin-bottom: 10px;
+    }
+    .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    .container .inputForm,
+    .container .tables{
+        margin-bottom: 10px;
+        min-width: 250px;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}

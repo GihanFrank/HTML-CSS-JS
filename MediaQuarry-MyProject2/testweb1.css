@@ -1,0 +1,185 @@
+body {
+
+    background-color: rgb(250, 248, 248);
+    font-family: sans-serif;
+    line-height: 1.6em;
+    margin: 0;
+    
+    
+    
+}
+
+.container {
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    
+}
+
+#main-head {
+    background-color: yellow;
+    width: 100%;
+    
+    border-bottom: 1px black solid;
+}
+
+#logo {
+    float: left;
+    text-align: center;
+    padding: 5px 10px;
+    border-left: 1px black solid;
+    border-right: 1px black solid;
+    border-bottom: 1px rgb(0, 0, 0) solid;
+    background-color: rgb(252, 252, 249);
+}
+
+#nav-bar {
+    margin-top: 10px;
+    float: right;
+    
+
+}
+
+#nav-bar ul {
+    padding: 0;
+    list-style: none;
+
+
+}
+
+#nav-bar li {
+    display: inline;
+    font-size: 20px;
+
+    padding-left: 20px;
+    padding-right: 20px;
+
+    color: black;
+}
+
+#nav-bar a{
+    text-decoration: none;
+    color: black;
+    padding: 100% 20px;
+    background-color: white;
+    border: 1px black solid;
+    font-weight: bolder;
+}
+#nav-bar a:hover{
+    color: white;
+    background-color: black;
+}
+#nav-bar a:active{
+    color: black;
+    background-color: white;
+}
+/* Hero section */
+
+#hero{
+    background-image: url(01.jpg);
+    
+    height: 450px;
+    margin-bottom: 25px;
+    text-align: center;
+    overflow: hidden;
+}
+.container #text1{
+    text-align: center;
+   line-height: 1em;
+    font-size: 80px;
+}
+.container #body1{
+    float: left;
+    width: 60%;
+    padding: 0 30px;
+    box-sizing: border-box;
+}
+.container #body2{
+    float: right;
+    width: 20%;
+    padding: 0 30px;
+    background-color: yellow;
+    color: black;
+}
+.foot{
+    position:fixed;
+    margin-bottom: 0;
+    width: 100%;
+    bottom: 0;
+    
+    
+}
+.foot #fot{
+    background-color: yellow;
+    color: black;
+    
+    text-align: right;
+    width: 100%;
+    
+    
+}
+.foot #fot h4{
+    padding: 10px 10px;
+    margin-bottom: 0;
+}
+
+/* media quaries */
+@media(max-width:1030px){
+    #main-head{
+        
+        border: 1px black solid;
+        height: auto;
+        text-align: center;
+        position: fixed;
+        top:0;
+        
+        
+         }
+         .container #logo{
+            border: 1px black solid;
+            float: none;
+           margin: 0;
+           padding: 0;
+            
+         }
+         #nav-bar{
+            float: none;
+            text-align: center;
+            display: grid;
+         }
+         #nav-bar a:hover{
+            color: rgb(6, 6, 6);
+            font-weight: lighter;
+         }
+         .container #nav-bar li{
+            float: none;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            display: grid;
+         }
+.container #nav-bar ul{
+    float: none;
+    display: grid;
+    text-align: center;
+    
+
+}
+        .container #nav-bar a{
+           float: none;
+            background-color: yellow;
+            border: none;
+          margin: 0;
+          padding: 0;
+          text-align: center;
+
+            
+            
+        } 
+        .foot #fot{
+            
+            height: 30px;
+            text-align: center;
+            font-size: 13px;
+        }
+}

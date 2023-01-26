@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Note App</title>
+    <link rel="stylesheet" href="noteapp.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1 id="topic">Note App</h1>
+        </div>
+        <div class="search">
+            <input type="text" id="searchField" placeholder="Search your notes here...">
+        </div>
+    </header>
+    <div class="container" id="appBody">
+        <div class="inputForm">
+            <form action="" id="addNote">
+                <h4>Add a Note</h4>
+                <input type="text" id="noteTitle" placeholder="Title">
+                <textarea id="noteBody" placeholder="Enter text"></textarea>
+                <button id="saving" type="submit">Save</button>
+                <button id="reset" type="reset">Reset</button>
+            </form>
+        </div>
+        <div id="savingTables" class="tables">
+            <table id="items">
+                <tr>
+                    <th>Tittle</th>
+                    <th>View</th>
+                    <th>Delete</th>
+                </tr>
+                <tr>
+                    <td>Note 01</td>
+                    <td class="buttonCellV">
+                        <button>View</button>
+                    </td>
+                    <td class="buttonCellD">
+                        <Button>Delete</Button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Note 02</td>
+                    <td class="buttonCellV">
+                        <button>View</button>
+                    </td>
+                    <td class="buttonCellD">
+                        <Button>Delete</Button>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Note 03</td>
+                    <td class="buttonCellV">
+                        <button>View</button>
+                    </td>
+                    <td class="buttonCellD">
+                        <Button>Delete</Button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <script src="noteapp.js"></script>
+</body>
+
+</html>

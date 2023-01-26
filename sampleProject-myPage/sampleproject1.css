@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(175, 250, 1);
+    line-height: 1.6em;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.round{
+    width: 200px;
+    height: 200px;
+    border: 2px blueviolet solid;
+    margin: 40px auto auto auto;
+    border-radius: 70%;
+    background-color: white;
+    position: relative;
+    display: inline-block;
+    animation-name: logoanimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+}
+.round img{
+    margin-top: 40px;
+    width: 80%;
+}
+.container{
+    margin-top: 20px;
+    padding: 30px;
+    /* margin: auto; */
+}
+.container p{
+    margin-top: 20px;
+    margin-bottom: 40px;
+    animation-name: disanimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.container h1{
+    animation-name: titleanimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    position: relative;
+}
+.container h1 span{
+    background-color: black;
+    color: white;
+}
+.lnk{
+    width: 100px;
+    height: 30px;
+    border: 1px black solid;
+    padding: 10px;
+    position: relative;
+    /* margin: auto; */
+    margin: auto;
+    background-color: white;
+    animation-name: linkanimation;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    transition-property: all;
+    transition-duration: 1s;
+    position: relative;
+    
+    
+}
+.lnk a{
+   
+    padding: 10px;
+    background-color: white;
+    text-decoration: none;
+    color: black;
+}
+.lnk:hover{
+width: 20%;
+
+font-size: larger;
+}
+
+@keyframes linkanimation{
+    0%{
+        opacity: 0%;
+        size: 0%;
+    }
+    100%{
+        opacity: 100%;
+        size: 100%;
+    }
+}
+@keyframes titleanimation{
+    0%{
+        margin-top: -40px;
+        opacity: 0;
+    }
+}
+@keyframes disanimation{
+    0%{
+        margin-bottom: 300px;
+    }
+}
